@@ -6,4 +6,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="this_category">This Category</string>
     <string name="category_lifestyle">Category Lifestyle</string>
+    <string name="category_name">Category Name</string>
+    <string name="category_description">Category Description</string>
+    <string name="to_profile">To Profile</string>
+    <string name="show_dialog">Show Dialog</string>
 </resources>
