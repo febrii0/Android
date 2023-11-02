@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/search"
-        android:icon="@drawable/ic_search_white_24px"
+        android:icon="@drawable/baseline_search_24"
         android:title="@string/search"
         app:actionViewClass="androidx.appcompat.widget.SearchView"
         app:showAsAction="collapseActionView|always" />
@@ -11,9 +11,10 @@
     <group android:menuCategory="container">
         <item android:id="@+id/menu1"
             android:title="@string/menu_1"
-            android:icon="@drawable/ic_announcement_white_24"
+            android:icon="@drawable/baseline_announcement_24"
             app:showAsAction="always"/>
-        <item android:id="@+id/menu2"
+        <item
+            android:id="@+id/menu2"
             android:title="@string/menu_2"/>
     </group>
 </menu>

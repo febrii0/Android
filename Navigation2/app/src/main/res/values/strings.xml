@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">Navigation2</string>
+<!--    <string name="app_name">Navigation2</string>-->
+    <string name="app_name">My Action Bar</string>
     <string name="menu_1">Menu 1 (Satu)</string>
     <string name="menu_2">Menu 2 (Dua)</string>
     <string name="this_activity">Ini adalah menu activity</string>

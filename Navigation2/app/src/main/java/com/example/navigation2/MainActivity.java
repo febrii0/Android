@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (searchManager != null) {
             SearchView searchView = (SearchView) (menu.findItem(R.id.search)).getActionView();
-            searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+            searchView.setSearchableInfo (searchManager.getSearchableInfo(getComponentName()));
             searchView.setQueryHint(getResources().getString(R.string.search_hint));
             searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
                 @Override
@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
                     searchView.clearFocus();
                     return true;
                 }
-
                 @Override
                 public boolean onQueryTextChange(String newText) {
                     return false;
@@ -48,20 +47,20 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected (MenuItem item){
-        if (item.getItemId() == R.id.menu1) {
-            getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fragment_container, new MenuFragment())
-                    .addToBackStack(null)
-                    .commit();
-            return true;
-        } else if (item.getItemId() == R.id.menu2) {
-            Intent i = new Intent(this, MainActivity.class);
-            startActivity(i);
-            return true;
-        } else {
-            return true;
-        }
-    }
+//    @Override
+//    public boolean onOptionsItemSelected (MenuItem item){
+//        if (item.getItemId() == R.id.menu1) {
+//            getSupportFragmentManager().beginTransaction()
+//                    .replace(R.id.fragment_container, new MenuFragment())
+//                    .addToBackStack(null)
+//                    .commit();
+//            return true;
+//        } else if (item.getItemId() == R.id.menu2) {
+//            Intent i = new Intent(this, MainActivity.class);
+//            startActivity(i);
+//            return true;
+//        } else {
+//            return true;
+//        }
+//    }
 }
